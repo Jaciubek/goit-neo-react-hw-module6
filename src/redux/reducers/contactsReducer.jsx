@@ -1,6 +1,6 @@
 import { createReducer } from '@reduxjs/toolkit';
-import contactsItems from 'data/contactsItems';
-import { addContact, deleteContact } from "./redux/actions/contactsActions";
+import contactsItems from '../components/data/contactsItems.js';
+import { addContact, deleteContact } from './redux/actions/contactsActions.jsx';
 
 const initialState = contactsItems;
 

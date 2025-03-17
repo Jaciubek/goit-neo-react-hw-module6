@@ -1,10 +1,10 @@
 import styles from './App.module.css';
-import { Section } from "./components/Section/Section";
-import { ContactForm } from 'components/ContactForm/ContactForm';
+import { Section } from './Section/Section.jsx';
+import { ContactForm } from './ContactForm/ContactForm.jsx';
 import React from 'react';
-import { ContactList } from './ContactList/ContactList';
-import { Filter } from './Filter/Filter';
-import { Notification } from './Notification/Notification';
+import { ContactList } from './ContactList/ContactList.jsx';
+import { Filter } from './Filter/Filter.jsx';
+import { Notification } from './Notification/Notification.jsx';
 import { useSelector } from 'react-redux';
 
 export const App = () => {
