@@ -1,10 +1,9 @@
 import { createReducer } from '@reduxjs/toolkit';
-import { setFilter } from "./redux/actions/filterActions.jsx";
+import { setFilter } from '../actions/filterActions';
 
-const initialState = '';
+export const initialState = '';
 
 const filterReducer = createReducer(initialState, {
   [setFilter]: (state, { payload }) => (state = payload),
 });
 
-export default filterReducer;

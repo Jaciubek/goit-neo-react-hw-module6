@@ -1,9 +1,9 @@
 import styles from './ContactForm.module.css';
-import Button from 'components/Button/Button.jsx';
+import Button from './components/Button/Button';
 import React from 'react';
 import { nanoid } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/actions/contactsActions.jsx';
+import { addContact } from './redux/actions/contactsActions';
 
 
 

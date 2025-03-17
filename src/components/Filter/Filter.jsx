@@ -1,9 +1,9 @@
 import styles from './Filter.module.css';
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { setFilter } from './redux/actions/filterActions.jsx';
+import { setFilter } from './redux/actions/filterActions';
 
-export const Filter = () => {
+const Filter = () => {
   const { filterField, filterText, filterInput } = styles;
 
   const dispatch = useDispatch();
@@ -21,3 +21,4 @@ export const Filter = () => {
   );
 };
 
+export default Filter;

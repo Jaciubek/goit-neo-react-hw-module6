@@ -1,13 +1,13 @@
 import styles from './App.module.css';
-import { Section } from './Section/Section.jsx';
-import { ContactForm } from './ContactForm/ContactForm.jsx';
+import Section from './Section/Section';
+import ContactForm from './ContactForm/ContactForm';
 import React from 'react';
-import { ContactList } from './ContactList/ContactList.jsx';
-import { Filter } from './Filter/Filter.jsx';
-import { Notification } from './Notification/Notification.jsx';
+import ContactList from './ContactList/ContactList';
+import Filter from './Filter/Filter';
+import Notification from './Notification/Notification';
 import { useSelector } from 'react-redux';
 
-export const App = () => {
+const App = () => {
   const { appWrapper } = styles;
 
   const contactsList = useSelector(state => state.contacts);
@@ -32,3 +32,4 @@ export const App = () => {
   );
 };
 
+export default App;
