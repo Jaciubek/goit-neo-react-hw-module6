@@ -1,8 +1,8 @@
 import styles from './ContactList.module.css';
-import Notification from 'components/Notification/Notification';
+import Notification from '../Notification/Notification';
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { deleteContact } from 'redux/actions/contactsActions';
+import { deleteContact } from '../../redux/actions/contactsActions';
 
 export const ContactList = () => {
   const { contactList__wrapper, contactList__text, contactList__button } = styles;
